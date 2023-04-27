@@ -573,8 +573,8 @@ export const home = [
     ),
     desc: (
       <span>
-        Transform your outdoor space into a lush oasis with Greenwell Yard's
-        expert landscaping services.
+        Transform outdoor space into a lush oasis with Greenwell expert
+        landscaping services.
       </span>
     ),
   },
