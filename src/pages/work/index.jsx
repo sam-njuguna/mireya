@@ -56,8 +56,14 @@ function Work() {
                     <MdLocalSee />
                   </div>
                 </div>
-                <h4>{port.name}</h4>
-                <p>{port.desc}</p>
+                {port.image ? (
+                  <div className="d">
+                    <h4>{port.name}</h4>
+                    <p>{port.desc}</p>
+                  </div>
+                ) : (
+                  ""
+                )}
               </Link>
             ))}
           </div>
@@ -70,8 +76,14 @@ function Work() {
                     <MdLocalSee />
                   </div>
                 </div>
-                <h4>{port.name}</h4>
-                <p>{port.desc}</p>
+                {port.image ? (
+                  <div className="d">
+                    <h4>{port.name}</h4>
+                    <p>{port.desc}</p>
+                  </div>
+                ) : (
+                  ""
+                )}
               </Link>
             ))}
           </div>
@@ -85,7 +97,7 @@ function Work() {
                   </div>
                 </div>
                 {port.image ? (
-                  <div className="">
+                  <div className="d">
                     <h4>{port.name}</h4>
                     <p>{port.desc}</p>
                   </div>
