@@ -1,0 +1,88 @@
+.detail {
+  position: relative;
+  .max-width {
+    @media (max-width: 450px) {
+      padding: 0 1rem;
+    }
+    .desc {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding-top: 8rem;
+      padding-bottom: 4rem;
+
+      img {
+        height: 600px;
+        width: 100%;
+        object-fit: cover;
+        margin-top: 5rem;
+      }
+      .date {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        margin-top: 5rem;
+
+        .line {
+          height: 4px;
+          width: 40px;
+          border-radius: 8px;
+          background-color: var(--btn);
+        }
+        p {
+          font-size: 12px;
+          text-transform: uppercase;
+          font-weight: 700;
+          color: var(--title);
+        }
+      }
+      .con {
+        width: 100%;
+        text-align: start;
+        margin-top: 2rem;
+        p {
+          margin-top: 1rem;
+        }
+      }
+      .test {
+        background-color: #000000;
+        margin-top: 4rem;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 2rem;
+        min-height: 250px;
+        i {
+          margin-top: 1rem;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+  .back {
+    position: fixed;
+    top: 6rem;
+    left: 0;
+    width: 100%;
+    .icon {
+      width: 50px;
+      height: 50px;
+      background-color: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        color: var(--title);
+        font-size: 1.4rem;
+        transition: var(--trans);
+        &:hover {
+          color: var(--btn);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Roboto:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: "Josefin Sans", sans-serif;
+  user-select: none;
+}
+:root {
+  --bg: #141414;
+  --text: #d7d7d7cc;
+  --title: #e9e9e9;
+  --text-fade: #d7d7d72f;
+  --btn: red;
+  --trans: 0.5s ease;
+  --jos: "Josefin Sans", sans-serif;
+  --roboto: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--roboto);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  line-height: normal;
+  font-size: 16px;
+  font-weight: 300;
+
+  p {
+    line-height: 1.4;
+  }
+}
+.width {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+.max-width {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.all-width {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+.span {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--title);
+}
+.spans {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--title);
+}
+
+.footer {
+  height: 900px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  background-image: linear-gradient(180deg, transparent, #0c0c0cf1, #141414);
+}
+
+.right {
+  height: 100vh;
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-image: linear-gradient(-90deg, transparent, #0c0c0cf1, #141414);
+}
+.outline-text {
+  font-weight: 700;
+  -webkit-text-stroke: 1px var(--title);
+  color: transparent;
+  @media (max-width: 450px) {
+    -webkit-text-stroke: 1px var(--title);
+  }
+}
+.out-text {
+  font-weight: 700;
+  -webkit-text-stroke: 1px var(--text-fade);
+  color: transparent;
+  font-size: 64px;
+  font-family: "Roboto", sans-serif;
+  span {
+    font-family: "Roboto", sans-serif;
+  }
+  @media (max-width: 450px) {
+    font-size: 32px;
+  }
+}
+.h1 {
+  font-size: 64px;
+  font-family: var(--roboto);
+  color: var(--title);
+  span {
+    font-family: var(--roboto);
+  }
+  @media (max-width: 450px) {
+    font-size: 32px;
+  }
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  h5 {
+    position: relative;
+    font-size: 10px;
+    letter-spacing: 2px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: -1rem;
+      left: 0rem;
+      right: 0rem;
+      width: 50px;
+      height: 4px;
+      border-radius: 8px;
+      background-color: var(--btn);
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.h3 {
+  font-size: 28px;
+  color: var(--title);
+  font-family: var(--roboto);
+  @media (max-width: 450px) {
+    font-size: 24px;
+    br {
+      display: none;
+    }
+  }
+}
+.scroll {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  .border {
+    width: 20px;
+    height: 40px;
+    border: 2px solid var(--text);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .dot {
+      width: 5px;
+      height: 8px;
+      background: var(--title);
+      border-radius: 50px;
+      animation: up 0.5s alternate infinite;
+    }
+  }
+  .spans {
+    margin-top: 2rem;
+  }
+}
+.button {
+  height: 50px;
+  border: 2px solid var(--title);
+  background-color: transparent;
+  color: var(--title);
+  width: 180px;
+  text-transform: uppercase;
+  font-size: 12px;
+  transition: var(--trans);
+  letter-spacing: 2px;
+  cursor: pointer;
+  &:hover {
+    color: var(--btn);
+  }
+}
+
+.call {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  .desc {
+    p {
+      margin: 1rem 0;
+    }
+    .w {
+      width: 70%;
+      margin: auto;
+      padding: 1rem 0;
+      @media (max-width: 450px) {
+        width: 100%;
+      }
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;
+      margin-top: 1rem;
+      a {
+        color: var(--title);
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: 600;
+        transition: var(--trans);
+        &:hover {
+          color: var(--btn);
+        }
+      }
+    }
+  }
+}
+.mt {
+  margin-top: 4rem;
+}
+.client {
+  color: var(--btn);
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+@keyframes up {
+  from {
+    transform: translateY(-100%);
+  }
+  from {
+    transform: translateY(100%);
+  }
+}
