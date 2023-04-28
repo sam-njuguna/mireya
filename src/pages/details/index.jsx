@@ -18,7 +18,9 @@ const Detail = () => {
             </div>
             <p className="spans">SCROLL DOWN</p>
           </div>
-          <img src={port.details.image} alt="" />
+          <div className="img">
+            <img src={port.details.image} alt="" />
+          </div>
           <div className="date">
             <span className="line"></span>
             <p>{port.details.date}</p>

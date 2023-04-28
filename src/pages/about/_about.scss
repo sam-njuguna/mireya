@@ -38,16 +38,10 @@
       }
     }
   }
-  .pb {
-    padding-bottom: 4rem;
-  }
-  .pt {
-    padding-top: 6rem;
-  }
+
   .width {
-    @media (max-width: 450px) {
-      padding: 1rem;
-    }
+    padding: 4rem 1px;
+
     .content {
       display: flex;
       flex-direction: column;
