@@ -59,15 +59,6 @@ function Nav() {
                     Contact
                   </NavLink>
                 </li>
-                <li>
-                  <NavLink
-                    to="/blog"
-                    active="/blog"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Blog
-                  </NavLink>
-                </li>
               </ul>
             </div>
             <div className="loc">

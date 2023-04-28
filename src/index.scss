@@ -191,6 +191,10 @@ body {
   &:hover {
     color: var(--btn);
   }
+  @media (max-width: 450px) {
+    font-size: 10px;
+    width: 160px;
+  }
 }
 
 .call {
@@ -218,6 +222,9 @@ body {
       justify-content: center;
       gap: 4rem;
       margin-top: 1rem;
+      @media (max-width: 450px) {
+        gap: 2rem;
+      }
       a {
         color: var(--title);
         font-size: 12px;
@@ -227,6 +234,9 @@ body {
         transition: var(--trans);
         &:hover {
           color: var(--btn);
+        }
+        @media (max-width: 450px) {
+          font-size: 10px;
         }
       }
     }

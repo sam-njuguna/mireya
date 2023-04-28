@@ -242,9 +242,7 @@ export const portfolio = [
       ),
     },
   },
-];
 
-export const port1 = [
   {
     id: 4,
     name: "Contemporary Artitechuare Design",
@@ -420,9 +418,7 @@ export const port1 = [
       ),
     },
   },
-];
 
-export const port2 = [
   {
     id: 8,
     name: "Facelift",

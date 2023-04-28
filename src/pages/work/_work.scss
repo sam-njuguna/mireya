@@ -49,73 +49,65 @@
       flex-direction: column;
       margin-bottom: 2rem;
     }
-    .flex {
+
+    .cards {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
       gap: 2rem;
-      .c3 {
-        @media (max-width: 900px) {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 2rem;
-        }
-      }
-      .cards {
-        gap: 2rem;
-        height: max-content;
+      align-items: center;
+      justify-content: center;
+      a {
         display: flex;
         flex-direction: column;
+        color: var(--text);
+        background-color: #0e0e0e;
         width: 300px;
-        background-color: #000000;
-        a {
-          display: flex;
-          flex-direction: column;
-          color: var(--text);
-          .view {
-            position: relative;
-            transition: var(--trans);
-            img {
+        min-height: 365px;
+        @media (max-width: 450px) {
+          width: 100%;
+        }
+        .view {
+          position: relative;
+          transition: var(--trans);
+          img {
+            width: 100%;
+            height: max-content;
+            @media (max-width: 450px) {
               width: 100%;
-              height: max-content;
-              @media (max-width: 450px) {
-                width: 100%;
-              }
             }
+          }
+          .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: var(--bg);
+            width: 100px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: var(--trans);
+            cursor: pointer;
+            svg {
+              font-size: 1.3rem;
+            }
+          }
+          &:hover {
             .center {
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              background-color: var(--bg);
-              width: 100px;
-              height: 50px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              opacity: 0;
-              transition: var(--trans);
-              cursor: pointer;
-              svg {
-                font-size: 1.3rem;
-              }
-            }
-            &:hover {
-              .center {
-                opacity: 1;
-              }
+              opacity: 1;
             }
           }
-          .d {
-            padding: 0.5rem;
-          }
-          h4 {
-            font-size: 18px;
-            font-weight: 700;
-            color: var(--title);
-            margin-top: 0.5rem;
-          }
+        }
+        .d {
+          padding: 0.5rem;
+        }
+        h4 {
+          font-size: 18px;
+          font-weight: 700;
+          color: var(--title);
+          margin-top: 0.5rem;
         }
       }
     }

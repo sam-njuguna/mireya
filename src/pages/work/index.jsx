@@ -1,7 +1,7 @@
 import React from "react";
 import "./_work.scss";
 import bg from "../../assets/work.jpg";
-import { port1, port2, portfolio } from "../../constants/Constants";
+import { portfolio } from "../../constants/Constants";
 import { MdLocalSee } from "react-icons/md";
 import { Link } from "react-router-dom";
 
@@ -49,46 +49,6 @@ function Work() {
         <div className="flex">
           <div className="cards">
             {portfolio.map((port) => (
-              <Link key={port.id} to={`/detail/${port.id}`}>
-                <div className="view">
-                  <img src={port.image} alt={port.name} />
-                  <div className="center">
-                    <MdLocalSee />
-                  </div>
-                </div>
-                {port.image ? (
-                  <div className="d">
-                    <h4>{port.name}</h4>
-                    <p>{port.desc}</p>
-                  </div>
-                ) : (
-                  ""
-                )}
-              </Link>
-            ))}
-          </div>
-          <div className="cards">
-            {port1.map((port) => (
-              <Link key={port.id} to={`/detail/${port.id}`}>
-                <div className="view">
-                  <img src={port.image} alt={port.name} />
-                  <div className="center">
-                    <MdLocalSee />
-                  </div>
-                </div>
-                {port.image ? (
-                  <div className="d">
-                    <h4>{port.name}</h4>
-                    <p>{port.desc}</p>
-                  </div>
-                ) : (
-                  ""
-                )}
-              </Link>
-            ))}
-          </div>
-          <div className="cards c3">
-            {port2.map((port) => (
               <Link key={port.id} to={`/detail/${port.id}`}>
                 <div className="view">
                   <img src={port.image} alt={port.name} />

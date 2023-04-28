@@ -1,16 +1,12 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import { port1 } from "../../constants/Constants";
-import { port2 } from "../../constants/Constants";
 import { portfolio } from "../../constants/Constants";
 import { BsArrowLeft } from "react-icons/bs";
 import "./_detail.scss";
 const Detail = () => {
   const { id } = useParams();
 
-  const port = [...port1, ...port2, ...portfolio].find(
-    (p) => p.id === parseInt(id)
-  );
+  const port = portfolio.find((p) => p.id === parseInt(id));
   return (
     <div className="detail">
       <div className="max-width">
