@@ -32,8 +32,8 @@ const About = () => {
                 </span>
               </h1>
               <p>
-                <span className="span">Alina Wheeler </span> - Graphic Designer,
-                Art Director.
+                <span className="span">Emmanuel Kariga </span> - CEO, in Mireya
+                Desigers Campany.
               </p>
             </div>
             <div className="scroll">

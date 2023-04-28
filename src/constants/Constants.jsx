@@ -57,22 +57,22 @@ import {
 export const employees = [
   {
     img: freeman,
-    name: "David Kim",
+    name: "Ben Onyango",
     postion: "Exterior Designer",
   },
   {
     img: emma,
-    name: "Sarah Johnson",
+    name: "Sarah Makena",
     postion: " Interior Designer",
   },
   {
     img: mike,
-    name: "James Rodriguez ",
+    name: "James Mutua ",
     postion: "House Repair Specialist",
   },
   {
     img: paul,
-    name: "David Lee ",
+    name: "David Kimani ",
     postion: "Architect",
   },
 ];
@@ -80,7 +80,7 @@ export const employees = [
 export const testimonial = [
   {
     img: c1,
-    name: " Emily Jones",
+    name: "Salima Yasen",
     title: "Stay-at-home mom",
     desc: (
       <span>
@@ -123,7 +123,7 @@ export const testimonial = [
   },
   {
     img: c3,
-    name: "Clara Smith",
+    name: "Emily bett",
     title: "Real estate developer",
     desc: (
       <span>
@@ -634,7 +634,7 @@ export const portfolio = [
 export const home = [
   {
     type: "exterior design",
-    img: img4,
+    img: img38,
     title: (
       <span>
         Greenwell Yards
@@ -652,7 +652,7 @@ export const home = [
   },
   {
     type: "artichecture",
-    img: img10,
+    img: img17,
     title: (
       <span>
         Compact House
@@ -670,7 +670,7 @@ export const home = [
   },
   {
     type: "interior design ",
-    img: img7,
+    img: img21,
     title: (
       <span>
         Little Cottage
