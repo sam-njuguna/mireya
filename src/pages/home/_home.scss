@@ -67,16 +67,21 @@
             gap: 4rem;
             @media (max-width: 450px) {
               gap: 2rem;
+              justify-content: center;
             }
             a {
               color: var(--title);
               font-size: 12px;
-              font-weight: 600;
+              font-weight: 700;
               letter-spacing: 2px;
               text-transform: uppercase;
               transition: var(--trans);
               &:hover {
                 color: var(--btn);
+              }
+              @media (max-width: 450px) {
+                font-size: 10px;
+                font-weight: 700;
               }
             }
           }
