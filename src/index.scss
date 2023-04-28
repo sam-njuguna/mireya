@@ -41,18 +41,7 @@ body {
   max-width: 1250px;
   margin: 0 auto;
 }
-.wraper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  img {
-    width: 200px;
-    height: 300px;
-    @media (max-width: 450px) {
-      width: 100%;
-    }
-  }
-}
+
 .max-width {
   max-width: 900px;
   margin: 0 auto;
@@ -263,6 +252,18 @@ body {
   color: var(--btn);
   text-transform: capitalize;
   font-weight: 700;
+}
+.wraper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  img {
+    width: 200px;
+    height: 300px;
+    @media (max-width: 450px) {
+      width: 100%;
+    }
+  }
 }
 
 @keyframes up {
