@@ -33,7 +33,7 @@ const Detail = () => {
           </div>
           <div className="more">
             <h3 className="h3">More Images</h3>
-            <i>{port.details.more}</i>
+            <div className="image">{port.details.more}</div>
           </div>
         </div>
       </div>
