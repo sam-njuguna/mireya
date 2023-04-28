@@ -4,14 +4,16 @@ import App from "./App.jsx";
 import "./index.scss";
 import { BrowserRouter, useLocation } from "react-router-dom";
 import "swiper/css";
-const ScrollTop = () => {
-  const { pathname } = useLocation;
-  useEffect(() => window.scrollTo(0, 0), [pathname]);
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 };
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
-      <ScrollTop />
+      <ScrollToTop />
       <App />
     </BrowserRouter>
   </React.StrictMode>
