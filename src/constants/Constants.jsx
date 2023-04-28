@@ -168,11 +168,11 @@ export const portfolio = [
       image: img2,
       more: (
         <div className="wraper">
-          <img src={img3} alt="" />
+          <img src={img3} alt="" className="w1" />
           <img src={img2} alt="" />
-          <img src={img5} alt="" />
+          <img src={img5} alt="" className="w3" />
           <img src={img1} alt="" />
-          <img src={img4} alt="" />
+          <img src={img4} alt="" className="w2" />
         </div>
       ),
       date: "March 2022",
@@ -219,11 +219,11 @@ export const portfolio = [
       image: img7,
       more: (
         <div className="wraper">
-          <img src={img8} alt="" />
-          <img src={img7} alt="" />
+          <img src={img8} alt="" className="w2" />
+          <img src={img7} alt="" className="w1" />
           <img src={img9} alt="" />
           <img src={img6} alt="" />
-          <img src={img10} alt="" />
+          <img src={img10} alt="" className="w3" />
         </div>
       ),
       date: "August 2022",
@@ -273,11 +273,11 @@ export const portfolio = [
       image: img15,
       more: (
         <div className="wraper">
-          <img src={img12} alt="" />
+          <img src={img12} alt="" className="w3" />
           <img src={img13} alt="" />
-          <img src={img14} alt="" />
+          <img src={img14} alt="" className="w1" />
           <img src={img11} alt="" />
-          <img src={img15} alt="" />
+          <img src={img15} alt="" className="w2" />
         </div>
       ),
       date: "January 2022",
@@ -329,10 +329,10 @@ export const portfolio = [
       image: img17,
       more: (
         <div className="wraper">
-          <img src={img18} alt="" />
+          <img src={img18} alt="" className="w2" />
           <img src={img17} alt="" />
-          <img src={img19} alt="" />
-          <img src={img16} alt="" />
+          <img src={img19} alt="" className="w13" />
+          <img src={img16} alt="" className="w1" />
         </div>
       ),
       date: "May 2022",
@@ -382,12 +382,12 @@ export const portfolio = [
       image: img21,
       more: (
         <div className="wraper">
-          <img src={img22} alt="" />
-          <img src={img23} alt="" />
+          <img src={img22} alt="" className="w2" />
+          <img src={img23} alt="" className="w1" />
           <img src={img20} alt="" />
-          <img src={img24} alt="" />
+          <img src={img24} alt="" className="w3" />
           <img src={img25} alt="" />
-          <img src={img21} alt="" />
+          <img src={img21} alt="" className="w1" />
         </div>
       ),
       date: "October 2022",
@@ -433,9 +433,9 @@ export const portfolio = [
       more: (
         <div className="wraper">
           <img src={img28} alt="" />
-          <img src={img29} alt="" />
+          <img src={img29} alt="" className="w1" />
           <img src={img26} alt="" />
-          <img src={img27} alt="" />
+          <img src={img27} alt="" className="w3" />
         </div>
       ),
       date: "July 2022",
@@ -485,11 +485,11 @@ export const portfolio = [
       image: img31,
       more: (
         <div className="wraper">
-          <img src={img33} alt="" />
+          <img src={img33} alt="" className="w3" />
           <img src={img31} alt="" />
-          <img src={img32} alt="" />
+          <img src={img32} alt="" className="w2" />
           <img src={img30} alt="" />
-          <img src={img34} alt="" />
+          <img src={img34} alt="" className="w1" />
         </div>
       ),
       date: "January 2022",
@@ -542,9 +542,9 @@ export const portfolio = [
       more: (
         <div className="wraper">
           <img src={img39} alt="" />
-          <img src={img40} alt="" />
+          <img src={img40} alt="" className="w1" />
           <img src={img37} alt="" />
-          <img src={img38} alt="" />
+          <img src={img38} alt="" className="w2" />
         </div>
       ),
       date: "March 2023",
@@ -595,11 +595,11 @@ export const portfolio = [
       image: img44,
       more: (
         <div className="wraper">
-          <img src={img43} alt="" />
+          <img src={img43} alt="" className="w1" />
           <img src={img41} alt="" />
-          <img src={img44} alt="" />
+          <img src={img44} alt="" className="w2" />
           <img src={img45} alt="" />
-          <img src={img42} alt="" />
+          <img src={img42} alt="" className="w3" />
         </div>
       ),
       date: "April 2023",
