@@ -17,6 +17,41 @@ import {
   img8,
   img9,
   img10,
+  img11,
+  img12,
+  img13,
+  img14,
+  img15,
+  img16,
+  img17,
+  img18,
+  img19,
+  img20,
+  img21,
+  img22,
+  img23,
+  img24,
+  img25,
+  img26,
+  img27,
+  img28,
+  img29,
+  img30,
+  img31,
+  img32,
+  img33,
+  img34,
+  img35,
+  img36,
+  img37,
+  img38,
+  img39,
+  img40,
+  img41,
+  img42,
+  img43,
+  img44,
+  img45,
 } from "../assets";
 
 export const employees = [
@@ -129,7 +164,16 @@ export const portfolio = [
           </span>
         </span>
       ),
-      image: img1,
+      image: img2,
+      more: (
+        <div className="wraper">
+          <img src={img3} alt="" />
+          <img src={img2} alt="" />
+          <img src={img5} alt="" />
+          <img src={img1} alt="" />
+          <img src={img4} alt="" />
+        </div>
+      ),
       date: "March 2022",
       desc: (
         <span>
@@ -156,7 +200,7 @@ export const portfolio = [
   {
     id: 2,
     name: "Villa",
-    image: img5,
+    image: img6,
     desc: (
       <span>
         Transformed a villa in Mombasa with a modern and sleek exterior design.
@@ -171,7 +215,16 @@ export const portfolio = [
           </span>
         </span>
       ),
-      image: img5,
+      image: img7,
+      more: (
+        <div className="wraper">
+          <img src={img8} alt="" />
+          <img src={img7} alt="" />
+          <img src={img9} alt="" />
+          <img src={img6} alt="" />
+          <img src={img10} alt="" />
+        </div>
+      ),
       date: "August 2022",
       desc: (
         <span>
@@ -200,7 +253,7 @@ export const portfolio = [
   {
     id: 3,
     name: "Renovation",
-    image: img9,
+    image: img11,
 
     desc: (
       <span>
@@ -216,7 +269,16 @@ export const portfolio = [
           </span>
         </span>
       ),
-      image: img9,
+      image: img15,
+      more: (
+        <div className="wraper">
+          <img src={img12} alt="" />
+          <img src={img13} alt="" />
+          <img src={img14} alt="" />
+          <img src={img11} alt="" />
+          <img src={img15} alt="" />
+        </div>
+      ),
       date: "January 2022",
       desc: (
         <span>
@@ -246,7 +308,7 @@ export const portfolio = [
   {
     id: 4,
     name: "Contemporary Artitechuare Design",
-    image: img6,
+    image: img16,
     desc: (
       <span>
         Designed a contemporary and functional artitechuare plan for a
@@ -262,7 +324,15 @@ export const portfolio = [
           </span>
         </span>
       ),
-      image: img6,
+      image: img17,
+      more: (
+        <div className="wraper">
+          <img src={img18} alt="" />
+          <img src={img17} alt="" />
+          <img src={img19} alt="" />
+          <img src={img16} alt="" />
+        </div>
+      ),
       date: "May 2022",
       desc: (
         <span>
@@ -292,7 +362,7 @@ export const portfolio = [
   {
     id: 5,
     name: "Renovation",
-    image: img8,
+    image: img20,
     desc: (
       <span>
         Mireya's team undertook a complete renovation of a home in Eldoret.
@@ -307,7 +377,17 @@ export const portfolio = [
           </span>
         </span>
       ),
-      image: img8,
+      image: img21,
+      more: (
+        <div className="wraper">
+          <img src={img22} alt="" />
+          <img src={img23} alt="" />
+          <img src={img20} alt="" />
+          <img src={img24} alt="" />
+          <img src={img25} alt="" />
+          <img src={img21} alt="" />
+        </div>
+      ),
       date: "October 2022",
       desc: (
         <span>
@@ -336,7 +416,7 @@ export const portfolio = [
   {
     id: 6,
     name: "Living Space",
-    image: img7,
+    image: img26,
     desc: <span>Designed an outdoor living space for a villa in Malindi.</span>,
     details: {
       name: (
@@ -347,7 +427,15 @@ export const portfolio = [
           </span>
         </span>
       ),
-      image: img7,
+      image: img27,
+      more: (
+        <div className="wraper">
+          <img src={img28} alt="" />
+          <img src={img29} alt="" />
+          <img src={img26} alt="" />
+          <img src={img27} alt="" />
+        </div>
+      ),
       date: "July 2022",
       desc: (
         <span>
@@ -377,7 +465,7 @@ export const portfolio = [
   {
     id: 7,
     name: "Commercial Space",
-    image: img10,
+    image: img30,
 
     desc: (
       <span>Modern interior for a commercial space in Nairobi, Kenya.</span>
@@ -391,7 +479,16 @@ export const portfolio = [
           </span>
         </span>
       ),
-      image: img10,
+      image: img31,
+      more: (
+        <div className="wraper">
+          <img src={img33} alt="" />
+          <img src={img31} alt="" />
+          <img src={img32} alt="" />
+          <img src={img30} alt="" />
+          <img src={img34} alt="" />
+        </div>
+      ),
       date: "January 2022",
       desc: (
         <span>
@@ -422,7 +519,7 @@ export const portfolio = [
   {
     id: 8,
     name: "Facelift",
-    image: img3,
+    image: img37,
     desc: (
       <span>
         Team gave a residential home in Mombasa, Kenya, an exterior facelift.
@@ -437,7 +534,15 @@ export const portfolio = [
           </span>
         </span>
       ),
-      image: img3,
+      image: img38,
+      more: (
+        <div className="wraper">
+          <img src={img39} alt="" />
+          <img src={img40} alt="" />
+          <img src={img37} alt="" />
+          <img src={img38} alt="" />
+        </div>
+      ),
       date: "March 2023",
       desc: (
         <span>
@@ -467,7 +572,7 @@ export const portfolio = [
   {
     id: 9,
     name: "Kitchen Renovation",
-    image: img4,
+    image: img41,
     desc: (
       <span>
         Undertook a kitchen renovation project for a residential home in Nakuru,
@@ -483,7 +588,16 @@ export const portfolio = [
           </span>
         </span>
       ),
-      image: img4,
+      image: img44,
+      more: (
+        <div className="wraper">
+          <img src={img43} alt="" />
+          <img src={img41} alt="" />
+          <img src={img44} alt="" />
+          <img src={img45} alt="" />
+          <img src={img42} alt="" />
+        </div>
+      ),
       date: "April 2023",
       desc: (
         <span>
@@ -507,48 +621,6 @@ export const portfolio = [
           given our kitchen a contemporary look. We highly recommend Mireya for
           any kitchen renovation projects." -
           <span className="client"> Grace</span>.
-        </span>
-      ),
-    },
-  },
-  {
-    id: 10,
-    name: "Artitechuare Design",
-    image: img2,
-    desc: <span>Designed the artitechuare of a modern home in Kisumu.</span>,
-    details: {
-      name: (
-        <span>
-          Artitechuare Design for a
-          <span className="outline-text">
-            <br />
-            Modern Home in Kisumu
-          </span>
-        </span>
-      ),
-      image: img2,
-      date: "January 2023",
-      desc: (
-        <span>
-          Vorked on a modern home in Kisumu, Kenya, to design the artitechuare
-          of the home. They started by analyzing the site and determining the
-          best design elements to incorporate. The team then used modern design
-          techniques and materials to create a functional and aesthetically
-          pleasing artitechuare. They used sustainable materials like bamboo and
-          natural stone to create a seamless blend between the indoor and
-          outdoor spaces. The end result was a stunning and modern artitechuare
-          that perfectly complemented the home's interior.
-        </span>
-      ),
-      test: (
-        <span>
-          "Mireya's team did an amazing job in designing the artitechuare of our
-          modern home in Kisumu. Their use of sustainable materials and modern
-          design techniques has created a beautiful and functional space that
-          seamlessly blends with our home's interior. We love the seamless blend
-          between our indoor and outdoor spaces, and we highly recommend Mireya
-          for any artitechuare design projects." -
-          <span className="client"> John</span>.
         </span>
       ),
     },
