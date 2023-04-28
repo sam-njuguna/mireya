@@ -158,9 +158,10 @@ export const portfolio = [
     details: {
       name: (
         <span>
-          Minimalist Interior Design
+          Townhouse Minimalist
           <span className="outline-text">
-            <br /> for Townhouse
+            <br />
+            Interior
           </span>
         </span>
       ),
@@ -209,7 +210,7 @@ export const portfolio = [
     details: {
       name: (
         <span>
-          Exterior Design for
+          Exterior for
           <span className="outline-text">
             <br /> Villa
           </span>
@@ -263,9 +264,9 @@ export const portfolio = [
     details: {
       name: (
         <span>
-          Renovation a Historic
+          Historic Building
           <span className="outline-text">
-            <br /> Building
+            <br /> Renovation
           </span>
         </span>
       ),
@@ -318,9 +319,10 @@ export const portfolio = [
     details: {
       name: (
         <span>
-          Artitechuare Design for
+          Residential Home
           <span className="outline-text">
-            <br /> Residential Home
+            <br />
+            Artitechuare
           </span>
         </span>
       ),
@@ -371,9 +373,9 @@ export const portfolio = [
     details: {
       name: (
         <span>
-          Complete Home Renovation
+          Complete Home
           <span className="outline-text">
-            <br /> in Eldoret
+            <br /> Renovation
           </span>
         </span>
       ),
@@ -421,9 +423,9 @@ export const portfolio = [
     details: {
       name: (
         <span>
-          Living Space Design
+          Villa Living
           <span className="outline-text">
-            <br /> for Villa
+            <br /> Space Design
           </span>
         </span>
       ),
@@ -473,9 +475,10 @@ export const portfolio = [
     details: {
       name: (
         <span>
-          Interior Design for
+          Commercial Space
           <span className="outline-text">
-            <br /> Commercial Space
+            <br />
+            Interior Design
           </span>
         </span>
       ),
@@ -528,9 +531,10 @@ export const portfolio = [
     details: {
       name: (
         <span>
-          Facelift for
+          Residential Home
           <span className="outline-text">
-            <br /> Residential Home
+            <br />
+            Facelift
           </span>
         </span>
       ),
@@ -582,9 +586,9 @@ export const portfolio = [
     details: {
       name: (
         <span>
-          Kitchen Renovation for
+          Kitchen Renovation
           <span className="outline-text">
-            <br /> Residential Home
+            <br /> Home
           </span>
         </span>
       ),
