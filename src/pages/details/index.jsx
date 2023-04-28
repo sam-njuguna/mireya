@@ -31,6 +31,10 @@ const Detail = () => {
             <h3 className="h3">How Client Say</h3>
             <i>{port.details.test}</i>
           </div>
+          <div className="more">
+            <h3 className="h3">More Images</h3>
+            <i>{port.details.more}</i>
+          </div>
         </div>
       </div>
       <div className="back">
