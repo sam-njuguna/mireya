@@ -15,15 +15,13 @@ const LoaderWrapper = (Component, idName) =>
           <div className="loader__main">
             <div className="col">
               <h4>MIREYA</h4>
-              <div class="spinner"></div>
+              <div className="spinner"></div>
               <p>please wait</p>
             </div>
           </div>
         ) : (
           <>
-            <span className="hash-span" id={idName}>
-              &nbsp;
-            </span>
+            <span className="hash-span" id={idName}></span>
             <Component />
           </>
         )}

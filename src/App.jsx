@@ -6,13 +6,11 @@ import { Nav } from "./components";
 function App() {
   return (
     <div>
-      {/* <h1 class="outline-text">Hello World! 2</h1> */}
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/work" element={<Work />} />
-
         <Route path="/contact" element={<Contact />} />
         <Route path="/detail/:id" element={<Detail />} />
       </Routes>
