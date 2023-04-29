@@ -3,7 +3,20 @@ import "./_contact.scss";
 import bg from "../../assets/contact.jpg";
 import { MdLocationOn } from "react-icons/md";
 import { Link } from "react-router-dom";
+import LoaderWrapper from "../../hoc";
+import { useForm } from "react-hook-form";
 function Contact() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data, e) => {
+    e.preventDefault(); // Prevent page refresh on submit
+    console.log(data);
+  };
+
   return (
     <div className="contact">
       <div className="bg">
@@ -69,36 +82,115 @@ function Contact() {
             <h5>CONTACT FORM</h5>
           </div>
           <h3 className="h3">Write us a message</h3>
-          <form action="">
+          <form action="" onSubmit={handleSubmit(onSubmit)}>
             <div className="input">
               <div className="col">
                 <label htmlFor="">first name</label>
-                <input type="text" placeholder="Andrew" />
+                <input
+                  type="text"
+                  placeholder="Andrew"
+                  {...register("Fname", { required: true, minLength: 3 })}
+                />
+                {errors.Fname && errors.Fname.type === "required" && (
+                  <div className="error">
+                    <p>This field is required</p>
+                  </div>
+                )}
+                {errors.Fname && errors.Fname.type === "minLength" && (
+                  <div className="error">
+                    <p>Minimum length of 3 characters is required</p>
+                  </div>
+                )}
               </div>
               <div className="col">
                 <label htmlFor="">Last name</label>
-                <input type="text" placeholder="Chow" />
+                <input
+                  type="text"
+                  placeholder="Chow"
+                  {...register("Lname", { required: true, minLength: 3 })}
+                />
+                {errors.Lname && errors.Lname.type === "required" && (
+                  <div className="error">
+                    <p>This field is required</p>
+                  </div>
+                )}
+                {errors.Lname && errors.Lname.type === "minLength" && (
+                  <div className="error">
+                    <p>Minimum length of 3 characters is required</p>
+                  </div>
+                )}
               </div>
             </div>
             <div className="input">
               <div className="col">
                 <label htmlFor="">Email</label>
-                <input type="email" placeholder="example@gmail.com" />
+                <input
+                  type="email"
+                  placeholder="example@gmail.com"
+                  {...register("email", {
+                    required: true,
+                    pattern: /^\S+@\S+$/i, // email validation regex pattern
+                  })}
+                />
+                {errors.email && errors.email.type === "required" && (
+                  <div className="error">
+                    <p>This field is required.</p>
+                  </div>
+                )}
+                {errors.email && errors.email.type === "pattern" && (
+                  <div className="error">
+                    <p>Please enter a valid email.</p>
+                  </div>
+                )}
               </div>
               <div className="col">
                 <label htmlFor="">Phone Number</label>
-                <input type="number" placeholder="+254 7** *** ***" />
+                <input
+                  type="number"
+                  placeholder="+254 7** *** ***"
+                  {...register("phone", {
+                    required: true,
+                    pattern: /^\d{10}$/i,
+                  })}
+                />
+                {errors.phone && errors.phone.type === "required" && (
+                  <div className="error">
+                    <p>This field is required</p>
+                  </div>
+                )}
+                {errors.phone && errors.phone.type === "pattern" && (
+                  <div className="error">
+                    <p>Please enter a valid 10-digit phone number</p>
+                  </div>
+                )}
               </div>
             </div>
+
             <textarea
-              name=""
+              name="text"
               id=""
               cols="30"
               rows="10"
               placeholder="Type your Message."
+              {...register("message", { required: true, minLength: 10 })}
             />
+
+            <div className="area">
+              {errors.message && errors.message.type === "required" && (
+                <div className="error">
+                  <p>This field is required</p>
+                </div>
+              )}
+              {errors.message && errors.message.type === "minLength" && (
+                <div className="error">
+                  <p>Minimum length of 10 characters is required</p>
+                </div>
+              )}
+            </div>
             <div className="row">
-              <button className="button">send message</button>
+              <button className="button" type="submit">
+                send message
+              </button>
               <p>
                 <span>* </span>
                 We promise not to share your personal information with third
@@ -149,4 +241,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default LoaderWrapper(Contact, "contact");

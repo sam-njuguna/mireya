@@ -106,7 +106,7 @@
         .col {
           display: flex;
           flex-direction: column;
-          gap: 3px;
+          gap: 4px;
           width: 100%;
           label {
             text-align: start;
@@ -126,6 +126,16 @@
               border: 2px solid var(--btn);
             }
           }
+          .error {
+            position: relative;
+            text-align: start;
+            background-color: var(--btn);
+            p {
+              font-size: 10px;
+              font-weight: 600;
+              text-transform: uppercase;
+            }
+          }
         }
       }
       textarea {
@@ -137,6 +147,34 @@
         color: var(--title);
         &:focus {
           border: 2px solid var(--btn);
+        }
+      }
+      .area {
+        margin-top: -12px;
+      }
+      .error {
+        position: relative;
+        text-align: start;
+        background-color: var(--btn);
+        padding: 2px;
+        display: flex;
+        align-items: center;
+        p {
+          font-size: 10px;
+          font-weight: 600;
+
+          text-transform: uppercase;
+        }
+        &:before {
+          position: absolute;
+          content: "";
+          height: 8px;
+          width: 8px;
+          background-color: var(--btn);
+          top: -3px;
+          left: 2px;
+          z-index: -2;
+          transform: rotate(45deg);
         }
       }
       .row {

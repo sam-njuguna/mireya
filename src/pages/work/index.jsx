@@ -4,6 +4,7 @@ import bg from "../../assets/work.jpg";
 import { portfolio } from "../../constants/Constants";
 import { MdLocalSee } from "react-icons/md";
 import { Link } from "react-router-dom";
+import LoaderWrapper from "../../hoc";
 
 function Work() {
   return (
@@ -116,4 +117,4 @@ function Work() {
   );
 }
 
-export default Work;
+export default LoaderWrapper(Work, "work");

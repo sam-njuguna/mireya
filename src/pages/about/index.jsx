@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import "./_about.scss";
+import LoaderWrapper from "../../hoc";
 const About = () => {
   return (
     <div className="about">
@@ -288,4 +289,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default LoaderWrapper(About, "about");

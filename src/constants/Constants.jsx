@@ -148,7 +148,7 @@ export const portfolio = [
   {
     id: 1,
     name: "Townhouse",
-    image: img1,
+    image: img4,
     desc: (
       <span>
         Mireya's team designed a chic and modern interior for a townhouse in

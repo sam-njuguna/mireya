@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { portfolio } from "../../constants/Constants";
 import { BsArrowLeft } from "react-icons/bs";
 import "./_detail.scss";
+import LoaderWrapper from "../../hoc";
 const Detail = () => {
   const { id } = useParams();
 
@@ -52,4 +53,4 @@ const Detail = () => {
   );
 };
 
-export default Detail;
+export default LoaderWrapper(Detail, "detail");
