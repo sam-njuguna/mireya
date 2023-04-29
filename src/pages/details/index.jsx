@@ -42,11 +42,11 @@ const Detail = () => {
       </div>
       <div className="back">
         <div className="max-width">
-          <div className="icon">
-            <Link to="/work">
+          <Link to="/work">
+            <div className="icon">
               <BsArrowLeft />
-            </Link>
-          </div>
+            </div>
+          </Link>
         </div>
       </div>
     </div>
