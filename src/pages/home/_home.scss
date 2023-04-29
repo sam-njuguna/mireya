@@ -18,7 +18,7 @@
     }
   }
   .footer {
-    @media (min-width: 450px) {
+    @media (min-width: 900px) {
       display: none;
     }
   }
@@ -38,6 +38,9 @@
         .width {
           @media (max-width: 450px) {
             padding: 0 1rem;
+          }
+          @media (max-width: 900px) {
+            padding: 0 2rem;
           }
           .type {
             display: flex;
@@ -153,8 +156,12 @@
         display: flex;
         z-index: 60;
         align-items: center;
+
         @media (max-width: 450px) {
           display: none;
+        }
+        @media (max-width: 900px) {
+          padding-left: 4rem;
         }
         .swiper-pagination-bullet {
           background-color: #ffffff;

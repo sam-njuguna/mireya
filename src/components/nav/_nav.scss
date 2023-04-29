@@ -92,6 +92,13 @@ nav {
           width: 100%;
           padding: 0 1rem;
         }
+        @media (max-width: 900px) {
+          width: 85%;
+          @media (max-width: 450px) {
+            width: 100%;
+            padding: 0 1rem;
+          }
+        }
         .active {
           color: var(--btn);
         }
@@ -122,14 +129,20 @@ nav {
         width: 100%;
         display: none;
       }
+
       .location {
         width: 60%;
         margin: auto;
         display: flex;
         flex-direction: column;
+
         gap: 14px;
-        @media (max-width: 450px) {
-          width: 100%;
+
+        @media (max-width: 900px) {
+          width: 30%;
+          @media (max-width: 450px) {
+            width: 100%;
+          }
         }
         .col {
           h4 {

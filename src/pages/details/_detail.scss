@@ -1,9 +1,13 @@
 .detail {
   position: relative;
   .max-width {
-    @media (max-width: 450px) {
-      padding: 0 1rem;
+    @media (max-width: 900px) {
+      padding: 0 2rem;
+      @media (max-width: 450px) {
+        padding: 0 1rem;
+      }
     }
+
     .desc {
       display: flex;
       flex-direction: column;
@@ -89,7 +93,7 @@
     top: 6rem;
     left: 0;
     width: 100%;
-    .a {
+    a {
       width: 50px;
       height: 50px;
       background-color: #0e0e0e;

@@ -112,8 +112,12 @@ body {
   span {
     font-family: var(--roboto);
   }
-  @media (max-width: 450px) {
-    font-size: 32px;
+
+  @media (max-width: 900px) {
+    font-size: 44px;
+    @media (max-width: 450px) {
+      font-size: 32px;
+    }
   }
 }
 .title {

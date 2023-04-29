@@ -183,7 +183,7 @@ const About = () => {
                 breakpoints={{
                   450: {
                     slidesPerView: 2,
-                    spaceBetween: 10,
+                    spaceBetween: 2,
                     loop: true,
                   },
                   900: {
