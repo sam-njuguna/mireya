@@ -192,6 +192,25 @@
             }
           }
         }
+        .w-pagination {
+          margin-top: 1rem;
+        }
+
+        .s-pagination,
+        .w-pagination {
+          .swiper-pagination-bullet {
+            background-color: #ffffff;
+            margin-right: 8px;
+            width: 10px;
+            height: 4px;
+            border-radius: 8px;
+            cursor: pointer;
+          }
+          .swiper-pagination-bullet-active {
+            background-color: var(--btn);
+            height: 8px;
+          }
+        }
       }
     }
   }

@@ -175,15 +175,18 @@ const About = () => {
                 nextEl: ".custom-next",
                 clickable: true,
               }}
+              pagination={{ el: ".w-pagination", clickable: true }}
               modules={[Pagination, Navigation]}
               breakpoints={{
                 450: {
                   slidesPerView: 2,
                   spaceBetween: 10,
+                  loop: true,
                 },
                 900: {
                   slidesPerView: 3,
                   spaceBetween: 5,
+                  loop: true,
                 },
               }}
               className="mySwiper"
@@ -196,6 +199,7 @@ const About = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
+            <div className="w-pagination"></div>
           </div>
         </div>
         <div className="content mt">
@@ -220,10 +224,10 @@ const About = () => {
           <div className="employee">
             <div className="nav">
               <div className="flex">
-                <div className="custom-prev">
+                <div className="c-prev">
                   <BsArrowLeft />
                 </div>
-                <div className="custom-next">
+                <div className="c-next">
                   <BsArrowRight />
                 </div>
               </div>
@@ -234,10 +238,11 @@ const About = () => {
               spaceBetween={5}
               loop={true}
               navigation={{
-                prevEl: ".custom-prev",
-                nextEl: ".custom-next",
+                prevEl: ".c-prev",
+                nextEl: ".c-next",
                 clickable: true,
               }}
+              pagination={{ el: ".s-pagination", clickable: true }}
               modules={[Pagination, Navigation]}
               className="mySwiper"
             >
@@ -262,6 +267,7 @@ const About = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
+            <div className="s-pagination"></div>
           </div>
         </div>
         <div className="mt call">

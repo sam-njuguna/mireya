@@ -79,7 +79,7 @@ export const employees = [
 
 export const testimonial = [
   {
-    img: c1,
+    img: c3,
     name: "Salima Yasen",
     title: "Stay-at-home mom",
     desc: (
@@ -122,7 +122,7 @@ export const testimonial = [
     star4: <BsStarFill />,
   },
   {
-    img: c3,
+    img: c1,
     name: "Emily bett",
     title: "Real estate developer",
     desc: (
