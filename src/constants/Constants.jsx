@@ -573,62 +573,6 @@ export const portfolio = [
       ),
     },
   },
-  {
-    id: 9,
-    name: "Kitchen Renovation",
-    image: img41,
-    desc: (
-      <span>
-        Undertook a kitchen renovation project for a residential home in Nakuru,
-        Kenya.
-      </span>
-    ),
-    details: {
-      name: (
-        <span>
-          Kitchen Renovation
-          <span className="outline-text">
-            <br /> Home
-          </span>
-        </span>
-      ),
-      image: img44,
-      more: (
-        <div className="wraper">
-          <img src={img43} alt="" className="w1" />
-          <img src={img41} alt="" />
-          <img src={img44} alt="" className="w2" />
-          <img src={img45} alt="" />
-          <img src={img42} alt="" className="w3" />
-        </div>
-      ),
-      date: "April 2023",
-      desc: (
-        <span>
-          The team worked on a residential home in Nakuru, Kenya, to undertake a
-          kitchen renovation project. They started by analyzing the space and
-          determining the best layout and design elements to incorporate. The
-          team then used durable and sustainable materials like bamboo and
-          recycled glass to create a functional and environmentally conscious
-          kitchen. They added modern design elements like stainless steel
-          appliances and sleek cabinetry to create a contemporary look. The end
-          result was a stunning and functional kitchen that perfectly met the
-          client's needs.
-        </span>
-      ),
-      test: (
-        <span>
-          "Mireya's team did an outstanding job in renovating our kitchen in
-          Nakuru. Their use of sustainable materials and modern design elements
-          has transformed our kitchen into a functional and beautiful space. We
-          love the new cabinetry and stainless steel appliances, which have
-          given our kitchen a contemporary look. We highly recommend Mireya for
-          any kitchen renovation projects." -
-          <span className="client"> Grace</span>.
-        </span>
-      ),
-    },
-  },
 ];
 
 export const home = [

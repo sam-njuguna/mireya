@@ -53,18 +53,23 @@
     .cards {
       display: flex;
       flex-wrap: wrap;
-      gap: 2rem;
+      gap: 1rem;
       align-items: center;
       justify-content: center;
       a {
         display: flex;
         flex-direction: column;
+        overflow: hidden;
         color: var(--text);
         background-color: #0e0e0e;
+        border-radius: 4px;
         width: 300px;
         min-height: 365px;
-        @media (max-width: 450px) {
+        @media (max-width: 650px) {
           width: 100%;
+        }
+        @media (max-width: 900px) {
+          width: 270px;
         }
         .view {
           position: relative;

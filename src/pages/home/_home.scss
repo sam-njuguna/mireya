@@ -82,9 +82,10 @@
               &:hover {
                 color: var(--btn);
               }
-              @media (max-width: 450px) {
+
+              @media (max-width: 650px) {
                 font-size: 10px;
-                font-weight: 700;
+                letter-spacing: 1px;
               }
             }
           }

@@ -34,17 +34,27 @@ body {
   font-weight: 300;
 
   p {
-    line-height: 1.4;
+    line-height: 1.2em;
+  }
+  @media (max-width: 450px) {
+    font-size: 14px;
   }
 }
 .width {
   max-width: 1250px;
   margin: 0 auto;
+  padding: 0 4rem;
+  @media (max-width: 450px) {
+    padding: 0 1rem;
+  }
 }
 
 .max-width {
   max-width: 900px;
   margin: 0 auto;
+  @media (max-width: 450px) {
+    padding: 0 1rem;
+  }
 }
 .all-width {
   max-width: 1800px;
@@ -106,17 +116,22 @@ body {
   }
 }
 .h1 {
-  font-size: 64px;
+  font-size: 56px;
   font-family: var(--roboto);
   color: var(--title);
   span {
     font-family: var(--roboto);
   }
 
-  @media (max-width: 900px) {
-    font-size: 44px;
-    @media (max-width: 450px) {
+  @media (max-width: 990px) {
+    font-size: 40px;
+    @media (max-width: 650px) {
       font-size: 32px;
+    }
+  }
+  @media (min-width: 991px) {
+    @media (max-width: 1150px) {
+      font-size: 48px;
     }
   }
 }
@@ -200,9 +215,10 @@ body {
   &:hover {
     color: var(--btn);
   }
-  @media (max-width: 450px) {
+  @media (max-width: 650px) {
     font-size: 10px;
     width: 160px;
+    letter-spacing: 1px;
   }
 }
 
@@ -244,8 +260,9 @@ body {
         &:hover {
           color: var(--btn);
         }
-        @media (max-width: 450px) {
+        @media (max-width: 650px) {
           font-size: 10px;
+          letter-spacing: 1px;
         }
       }
     }

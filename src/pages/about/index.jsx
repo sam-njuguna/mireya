@@ -22,7 +22,7 @@ const About = () => {
         </div>
         <div className="about__content">
           <div className="width">
-            <div className="intro ">
+            <div className="intro">
               <div className="title">
                 <h5>ABOUT US</h5>
               </div>
