@@ -12,13 +12,25 @@ const Footer = () => {
             <span>&copy;Alright reseved</span>
           </div>
           <div className="social">
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/in/samson-njuguna-896a02243"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaLinkedinIn />
             </a>
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/sam-njuguna"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaGithub />
             </a>
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://discord.com/users/1038333075433721926"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaDiscord />
             </a>
           </div>
