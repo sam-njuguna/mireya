@@ -100,7 +100,6 @@ function Work() {
               <h1 className="h1">
                 We still have a lot of
                 <span className="outline-text">
-                  {" "}
                   <br /> interesting things!
                 </span>
               </h1>
