@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { HiBars2, HiXMark } from "react-icons/hi2";
 import "./_nav.scss";
 import { Link, NavLink } from "react-router-dom";
+import { logo } from "../../assets";
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const handleopen = () => {
@@ -13,7 +14,7 @@ function Nav() {
         <div className="wid">
           <div className="logo">
             <Link to="/" onClick={() => setIsOpen(false)}>
-              <h1>Mireya</h1>
+              <img src={logo} alt="" />
             </Link>
           </div>
           <div className="menu" onClick={handleopen}>

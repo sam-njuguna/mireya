@@ -1,3 +1,4 @@
+import logo from "./logo.png";
 import emma from "./team/emma.jpg";
 import freeman from "./team/freeman.jpg";
 import mike from "./team/mike.jpg";
@@ -52,6 +53,7 @@ import img44 from "./portfolio/img44.jpg";
 import img45 from "./portfolio/img45.jpg";
 
 export {
+  logo,
   emma,
   freeman,
   mike,

@@ -144,6 +144,7 @@
     }
   }
   .progress {
+    position: relative;
     .width {
       display: flex;
       justify-content: start;
@@ -152,8 +153,8 @@
       .swiper-pagination {
         position: absolute;
         bottom: 50px;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 45%;
+        transform: translateX(-40%);
         display: flex;
         z-index: 60;
         align-items: center;
@@ -161,9 +162,7 @@
         @media (max-width: 450px) {
           display: none;
         }
-        @media (max-width: 900px) {
-          padding-left: 4rem;
-        }
+
         .swiper-pagination-bullet {
           background-color: #ffffff;
           margin-right: 8px;
@@ -174,7 +173,6 @@
         }
         .swiper-pagination-bullet-active {
           background-color: var(--btn);
-          height: 8px;
         }
       }
     }
