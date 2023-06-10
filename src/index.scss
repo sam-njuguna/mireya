@@ -214,6 +214,7 @@ body {
   transition: var(--trans);
   letter-spacing: 2px;
   font-weight: 700;
+  border-radius: 4px;
   cursor: pointer;
   &:hover {
     color: var(--btn);
@@ -232,7 +233,7 @@ body {
   align-items: center;
   text-align: center;
   gap: 1rem;
- 
+
   .desc {
     p {
       margin: 1rem 0;

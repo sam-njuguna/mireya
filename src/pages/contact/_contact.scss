@@ -109,6 +109,7 @@
         display: flex;
         align-items: center;
         gap: 1rem;
+
         @media (max-width: 650px) {
           flex-direction: column;
         }
@@ -134,11 +135,13 @@
             &:focus {
               border: 2px solid var(--btn);
             }
+            border-radius: 4px;
           }
           .error {
             position: relative;
             text-align: start;
             background-color: var(--btn);
+            border-radius: 4px;
             p {
               font-size: 10px;
               font-weight: 600;
@@ -154,6 +157,7 @@
         padding: 16px;
         transition: var(--trans);
         color: var(--title);
+        border-radius: 4px;
         &:focus {
           border: 2px solid var(--btn);
         }
