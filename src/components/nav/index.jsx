@@ -24,7 +24,7 @@ function Nav() {
         </div>
       </nav>
       {isOpen && (
-        <div className="links">
+        <div className="ul">
           <div className="all-width">
             <div className="links">
               <ul>
