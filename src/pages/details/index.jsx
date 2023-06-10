@@ -1,9 +1,10 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { portfolio } from "../../constants/Constants";
-import { BsArrowLeft } from "react-icons/bs";
+
 import "./_detail.scss";
 import LoaderWrapper from "../../hoc";
+import { FaArrowLeft } from "react-icons/fa";
 const Detail = () => {
   const { id } = useParams();
 
@@ -44,7 +45,7 @@ const Detail = () => {
         <div className="max-width">
           <Link to="/work">
             <div className="icon">
-              <BsArrowLeft />
+              <FaArrowLeft />
             </div>
           </Link>
         </div>
