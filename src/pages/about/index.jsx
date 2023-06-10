@@ -303,4 +303,4 @@ const About = () => {
   );
 };
 
-export default LoaderWrapper(About, "about");
+export default About;

@@ -1,5 +1,6 @@
 .detail {
   position: relative;
+  animation: fade 1s linear;
   .max-width {
     @media (max-width: 900px) {
       padding: 0 2rem;

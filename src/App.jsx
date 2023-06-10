@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { About, Contact, Detail, Home, Work } from "./pages";
 import { Nav } from "./components";
+import LoaderWrapper from "./hoc";
 
 function App() {
   return (
@@ -18,4 +19,4 @@ function App() {
   );
 }
 
-export default App;
+export default LoaderWrapper(App,"");

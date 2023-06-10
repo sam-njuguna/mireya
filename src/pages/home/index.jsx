@@ -79,4 +79,4 @@ function Home() {
   );
 }
 
-export default LoaderWrapper(Home, "");
+export default Home;

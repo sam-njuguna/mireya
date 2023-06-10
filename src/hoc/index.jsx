@@ -6,7 +6,7 @@ const LoaderWrapper = (Component, idName) =>
     useEffect(() => {
       setTimeout(() => {
         setIsLoading(false);
-      }, 3000); // Simulating a delay to show the loader
+      }, 2000);
     }, []);
 
     return (

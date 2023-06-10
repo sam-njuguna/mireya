@@ -53,4 +53,4 @@ const Detail = () => {
   );
 };
 
-export default LoaderWrapper(Detail, "detail");
+export default Detail;

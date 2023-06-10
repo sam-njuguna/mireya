@@ -245,4 +245,4 @@ function Contact() {
   );
 }
 
-export default LoaderWrapper(Contact, "contact");
+export default Contact;

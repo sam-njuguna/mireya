@@ -122,4 +122,4 @@ function Work() {
   );
 }
 
-export default LoaderWrapper(Work, "work");
+export default Work;
