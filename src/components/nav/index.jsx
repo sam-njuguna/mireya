@@ -26,7 +26,7 @@ function Nav() {
       {isOpen && (
         <div className="links">
           <div className="all-width">
-            <div className="ul">
+            <div className="links">
               <ul>
                 <li>
                   <NavLink to="/" active="/" onClick={() => setIsOpen(false)}>

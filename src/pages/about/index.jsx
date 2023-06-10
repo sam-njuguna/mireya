@@ -5,7 +5,7 @@ import vid from "../../assets/mvideo.mp4";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 import { employees, testimonial } from "../../constants/Constants";
-import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
@@ -161,10 +161,10 @@ const About = () => {
               <div className="nav">
                 <div className="flex">
                   <div className="custom-prev pag">
-                    <BsArrowLeft />
+                    <FaArrowLeft />
                   </div>
                   <div className="custom-next pag">
-                    <BsArrowRight />
+                    <FaArrowRight />
                   </div>
                 </div>
                 <p>SLIDER NAVIGATION</p>
@@ -231,10 +231,10 @@ const About = () => {
               <div className="nav">
                 <div className="flex">
                   <div className="c-prev pag">
-                    <BsArrowLeft />
+                    <FaArrowLeft />
                   </div>
                   <div className="c-next pag">
-                    <BsArrowRight />
+                    <FaArrowRight />
                   </div>
                 </div>
                 <p>SLIDER NAVIGATION</p>

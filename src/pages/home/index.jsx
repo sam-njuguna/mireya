@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "./_home.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { Navigation, Autoplay, Pagination } from "swiper";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -66,10 +66,10 @@ function Home() {
             <p>SLIDER NAVIGATION</p>
             <div className="flex">
               <div className="custom-prev">
-                <BsArrowLeft />
+                <FaArrowLeft />
               </div>
               <div className="custom-next">
-                <BsArrowRight />
+                <FaArrowRight />
               </div>
             </div>
           </div>

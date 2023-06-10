@@ -45,7 +45,7 @@ body {
   margin: 0 auto;
   padding: 0 4rem;
   @media (max-width: 450px) {
-    padding: 0 1rem;
+    padding: 0 2rem;
   }
 }
 
@@ -53,7 +53,7 @@ body {
   max-width: 900px;
   margin: 0 auto;
   @media (max-width: 450px) {
-    padding: 0 1rem;
+    padding: 0 2rem;
   }
 }
 .all-width {
@@ -144,6 +144,9 @@ body {
     position: relative;
     font-size: 10px;
     letter-spacing: 2px;
+    @media (max-width: 450px) {
+      letter-spacing: 1px;
+    }
     &::after {
       content: "";
       position: absolute;
@@ -229,6 +232,7 @@ body {
   align-items: center;
   text-align: center;
   gap: 1rem;
+ 
   .desc {
     p {
       margin: 1rem 0;
@@ -249,6 +253,7 @@ body {
       margin-top: 1rem;
       @media (max-width: 450px) {
         gap: 2rem;
+        justify-content: space-between;
       }
       a {
         color: var(--title);

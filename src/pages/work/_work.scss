@@ -41,7 +41,9 @@
   }
   .width {
     padding: 4rem 1rem;
-
+    @media (max-width: 450px) {
+      padding: 0 2rem;
+    }
     .nav {
       display: flex;
       align-items: center;
@@ -122,6 +124,9 @@
   }
   .all {
     padding: 0 1rem;
+    @media (max-width: 450px) {
+      padding: 0 2rem;
+    }
     .content {
       display: flex;
       flex-direction: column;
