@@ -183,20 +183,22 @@ const About = () => {
                 breakpoints={{
                   450: {
                     slidesPerView: 2,
-                    spaceBetween: 2,
                     loop: true,
+                    spaceBetween: 10,
                   },
-                  900: {
+                  750: {
                     slidesPerView: 3,
-                    spaceBetween: 5,
                     loop: true,
+                    spaceBetween: 5,
                   },
                 }}
                 className="mySwiper"
               >
                 {employees.map((employee, i) => (
                   <SwiperSlide key={i}>
-                    <img src={employee.img} alt="" />
+                    <div className="img">
+                      <img src={employee.img} alt="" />
+                    </div>
                     <p className="name">{employee.name}</p>
                     <p className="position">{employee.postion}</p>
                   </SwiperSlide>
