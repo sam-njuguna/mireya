@@ -3,7 +3,6 @@ import "./_contact.scss";
 import bg from "../../assets/contact.jpg";
 import { MdLocationOn } from "react-icons/md";
 import { Link } from "react-router-dom";
-import LoaderWrapper from "../../hoc";
 import { useForm } from "react-hook-form";
 import { Footer } from "../../components";
 function Contact() {

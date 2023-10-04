@@ -2,7 +2,6 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { portfolio } from "../../constants/Constants";
 import "./_detail.scss";
-import LoaderWrapper from "../../hoc";
 import { FaArrowLeft } from "react-icons/fa";
 const Detail = () => {
   const { id } = useParams();

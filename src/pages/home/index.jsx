@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import "./_home.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
@@ -7,7 +7,6 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { home } from "../../constants/Constants";
 import { Link } from "react-router-dom";
-import LoaderWrapper from "../../hoc";
 function Home() {
   return (
     <div className="home">
