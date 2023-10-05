@@ -8,13 +8,53 @@ function Nav() {
   const handleopen = () => {
     setIsOpen(!isOpen);
   };
+  const link = [
+    {
+      name: "Home",
+      path: "/",
+    },
+    {
+      name: "About",
+      path: "/about",
+    },
+    {
+      name: "Work",
+      path: "/work",
+    },
+    {
+      name: "Contact",
+      path: "/contact",
+    },
+  ];
+  const location = [
+    {
+      title: "COUNTRY:",
+      sub_title: "Kenya",
+    },
+    {
+      title: "CITY:",
+      sub_title: "Nairobi",
+    },
+    {
+      title: "ADRESS:",
+      sub_title: "Kasarani,Mwiki Road",
+    },
+    {
+      title: "EMAIL:",
+      sub_title: "sam.x.njuguna@gmail.com",
+    },
+    {
+      title: "PHONE:",
+      sub_title: "+254 70000000",
+    },
+  ];
   return (
     <>
       <nav>
         <div className="wid">
           <div className="logo">
             <Link to="/" onClick={() => setIsOpen(false)}>
-              <img src={logo} alt="" />
+              <img src={logo} alt="logo" />
             </Link>
           </div>
           <div className="menu" onClick={handleopen}>
@@ -28,62 +68,26 @@ function Nav() {
           <div className="all-width">
             <div className="links">
               <ul>
-                <li>
-                  <NavLink to="/" active="/" onClick={() => setIsOpen(false)}>
-                    Home
-                  </NavLink>
-                </li>
-                <li>
+                {link.map((link, index) => (
                   <NavLink
-                    to="/about"
-                    active="/about"
+                    to={link.path}
+                    active={link.path}
                     onClick={() => setIsOpen(false)}
+                    key={index}
                   >
-                    About
+                    {link.name}
                   </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/work"
-                    active="/work"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Work
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/contact"
-                    active="/contact"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Contact
-                  </NavLink>
-                </li>
+                ))}
               </ul>
             </div>
             <div className="loc">
               <div className="location">
-                <div className="col">
-                  <h4> COUNTRY:</h4>
-                  <p>Kenya</p>
-                </div>
-                <div className="col">
-                  <h4>CITY:</h4>
-                  <p>Nairobi</p>
-                </div>
-                <div className="col">
-                  <h4>ADRESS:</h4>
-                  <p>Kasarani,Mwiki Road</p>
-                </div>
-                <div className="col">
-                  <h4>EMAIL:</h4>
-                  <p>sam.x.njuguna@gmail.com</p>
-                </div>
-                <div className="col">
-                  <h4>PHONE:</h4>
-                  <p>+254 700 050 229</p>
-                </div>
+                {location.map((loc, index) => (
+                  <div className="col" key={index}>
+                    <h4>{loc.title}</h4>
+                    <p>{loc.sub_title}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
